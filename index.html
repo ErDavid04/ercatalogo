@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es" id="html-root">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020617">
+    <title>Inicio – ErCatálogo</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">ErCatálogo</div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="precios.html">Precios</a>
+            <a href="tallas.html">Tallas</a>
+            <a href="#como-comprar">Cómo comprar</a>
+        </div>
+    </nav>
+
+    <!-- HERO PRINCIPAL -->
+    <section class="hero hero-home">
+        <div class="hero-gradient-layer"></div>
+        <div class="hero-content hero-content-home">
+            <p class="hero-eyebrow">Tu acceso privado al catálogo pro</p>
+            <h1>¡Las mejores camisetas de fútbol!</h1>
+            <p class="hero-subtitle">Descubre colecciones exclusivas para fútbol, baloncesto, béisbol y más. Diseño,
+                calidad y estilo en cada prenda.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#futbol" class="btn btn-primary">
+                    <span>Ver catálogo</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb6qOE62f3EOLORTpE0q" target="_blank" class="btn btn-ghost">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Pedir por WhatsApp</span>
+                </a>
+            </div>
+
+            <div class="hero-meta">
+                <span><i class="fa-solid fa-truck-fast"></i> Envíos a España</span>
+                <span><i class="fa-solid fa-shirt"></i> Fútbol, NBA, MLB, NFL, F1</span>
+                <span><i class="fa-solid fa-user-shield"></i> Atención directa por chat</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- POR QUÉ ERCATÁLOGO -->
+        <section id="beneficios" class="section benefits">
+            <h2 class="section-title">¿Por qué ErCatálogo?</h2>
+            <div class="benefits-grid">
+                <article class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Calidad seleccionada</h3>
+                    <p>Trabajamos con proveedores de confianza y revisamos cada catálogo para ofrecer prendas con buen
+                        acabado,
+                        tejido y detalles.</p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3>Precios ajustados</h3>
+                    <p>Acceso a camisetas y conjuntos estilo pro a precios muy por debajo de la tienda oficial.</p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3>Envíos a España</h3>
+                    <p>Recibe tu pedido aproximadamente en dos semanas desde el envío, con opción de envío gratis a
+                        partir de
+                        cierto volumen.</p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3>Atención directa</h3>
+                    <p>Resolvemos dudas de talla, modelos, precios y combinaciones por WhatsApp, Telegram e Instagram.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FÚTBOL -->
+        <section class="catalog catalog-futbol" id="futbol">
+            <h2 class="section-title"><span class="no-gradient">⚽</span> Fútbol</h2>
+            <p class="section-subtitle">
+                Elige tu estilo: versión aficionado para el día a día, versión jugador para ir entallado, o joyas retro
+                para coleccionar.
+            </p>
+            <div class="cards">
+                <a href="https://tang2075.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/fan.webp" loading="lazy" alt="Camisetas Fan Version" />
+                        <div class="card-content">
+                            <h3>Fan Version</h3>
+                            <p>Camisetas versión aficionado, cómodas para el día a día.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://taobo0625.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/player.webp" loading="lazy" alt="Camisetas Player Version" />
+                        <div class="card-content">
+                            <h3>Player Version</h3>
+                            <p>Corte más ajustado y detalles pro, como en el campo.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://huiliyuan.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/retro.webp" loading="lazy" alt="Camisetas Retro" />
+                        <div class="card-content">
+                            <h3>Retro</h3>
+                            <p>Clásicos inolvidables con estilo actual para coleccionar.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://879322886k.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/shorts.webp" loading="lazy" alt="Calzonas de fútbol" />
+                        <div class="card-content">
+                            <h3>Calzonas</h3>
+                            <p>Combina tus camisetas con calzonas a juego.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://xionghaishuangmian.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/chaquetas.webp" loading="lazy" alt="Chaquetas de fútbol" />
+                        <div class="card-content">
+                            <h3>Chaquetas</h3>
+                            <p>Chaquetas y chándals de equipos para completar el look.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN OTROS DEPORTES -->
+        <section class="catalog catalog-otros-deportes" id="otros">
+            <h2 class="section-title"><span class="no-gradient">🏀⚾</span> Otros deportes</h2>
+            <p class="section-subtitle">
+                Saca tu lado más fan con camisetas NBA, MLB, NFL y F1. Elige tu liga, tu equipo y tu estilo.
+            </p>
+            <div class="cards">
+                <a href="https://pifajersey.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/nba.webp" loading="lazy" alt="Camisetas NBA" />
+                        <div class="card-content">
+                            <h3>NBA</h3>
+                            <p>Camisetas de baloncesto para pista y calle.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://xingkong-sports.x.yupoo.com/collections/3569857" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/calzonas_nba.webp" loading="lazy" alt="Calzonas NBA" />
+                        <div class="card-content">
+                            <h3>Calzonas NBA</h3>
+                            <p>Calzonas para combinar con tu camiseta favorita.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://yuanchuang1983.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/mlb.webp" loading="lazy" alt="Camisetas MLB" />
+                        <div class="card-content">
+                            <h3>MLB</h3>
+                            <p>Béisbol con estilo: jerseys clásicos y actuales.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://yuanchuang1983.x.yupoo.com/categories/490080" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/nfl.webp" loading="lazy" alt="Camisetas NFL" />
+                        <div class="card-content">
+                            <h3>NFL</h3>
+                            <p>Camisetas de rugby/fútbol americano potentes.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://yiyisports2016.x.yupoo.com/collections/3551571" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/f1.webp" loading="lazy" alt="Camisetas F1" />
+                        <div class="card-content">
+                            <h3>F1</h3>
+                            <p>Merch de Fórmula 1 para fans de paddock.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONJUNTOS -->
+        <section class="catalog catalog-conjuntos" id="conjuntos">
+            <h2 class="section-title"><span class="no-gradient">👕🩳</span> Conjuntos</h2>
+            <p class="section-subtitle">
+                Lleva la equipación completa: camiseta + pantalón, o chándals completos listos para entrenar o salir.
+            </p>
+            <div class="cards">
+                <a href="https://dongshanstore.x.yupoo.com/categories/322331" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/chandal_media_cremallera.webp" loading="lazy" alt="Chándal Adulto Media Cremallera" />
+                        <div class="card-content">
+                            <h3>Chándal Adulto Media Cremallera</h3>
+                            <p>Chándal adulto con cremallera media.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://dongshanstore.x.yupoo.com/categories/322329" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/chandal_cremallera_completa.webp" loading="lazy" alt="Chándal Adulto Cremallera Completa" />
+                        <div class="card-content">
+                            <h3>Chándal Adulto Cremallera Completa</h3>
+                            <p>Chándal adulto con cremallera completa.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://dongshanstore.x.yupoo.com/categories/322330" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/chandal_infantil.webp" loading="lazy" alt="Chándal infantil" />
+                        <div class="card-content">
+                            <h3>Chándal Infantil</h3>
+                            <p>Chándal infantil con cremallera media o completa.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://xiaoyueliang0917.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/equipacion.webp" loading="lazy" alt="Equipación Adulto e Infantil" />
+                        <div class="card-content">
+                            <h3>Equipación Adulto e Infantil</h3>
+                            <p>Equipaciones completas para entrenar o jugar.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN OTROS -->
+        <section class="catalog catalog-otros" id="otros-productos">
+            <h2 class="section-title"><span class="no-gradient">👟</span> Otros</h2>
+            <p class="section-subtitle">
+                Completa tu outfit con zapatillas y ropa deportiva extra.
+            </p>
+            <div class="cards">
+                <a href="https://ptnce.x.yupoo.com/categories/4760150" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/lv.webp" loading="lazy" alt="Zapatillas Louis Vuitton" />
+                        <div class="card-content">
+                            <h3>Louis Vuitton</h3>
+                            <p>Zapatillas estilo LV para looks muy top.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://zq-8866.x.yupoo.com/categories/3391954" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/af1.webp" loading="lazy" alt="Nike Air Force 1" />
+                        <div class="card-content">
+                            <h3>Air Force 1</h3>
+                            <p>Clásicos AF1 para combinar con tus camisetas.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ty-guoji.x.yupoo.com/albums?tab=gallery" target="_blank" class="card-link">
+                    <div class="card">
+                        <img src="img/otros.webp" loading="lazy" alt="Ropa de deporte extra" />
+                        <div class="card-content">
+                            <h3>Ropa deportiva</h3>
+                            <p>Ropa de deporte, calzonas y accesorios.</p>
+                            <span class="card-cta">Ver catálogo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CÓMO COMPRAR -->
+        <section id="como-comprar" class="section how-to">
+            <h2 class="section-title">Cómo comprar en ErCatálogo</h2>
+            <div class="how-to-steps">
+                <article class="how-step">
+                    <span class="how-step-number">1</span>
+                    <h3>Elige tu modelo</h3>
+                    <p>Entra en la categoría que quieras (fútbol, NBA, conjuntos...) y localiza la camiseta o conjunto
+                        que te
+                        guste.</p>
+                </article>
+                <article class="how-step">
+                    <span class="how-step-number">2</span>
+                    <h3>Envíanos captura o enlace</h3>
+                    <p>Haz captura de pantalla o copia el enlace del producto en Yupoo y mándalo por WhatsApp, Telegram
+                        o
+                        Instagram.</p>
+                </article>
+                <article class="how-step">
+                    <span class="how-step-number">3</span>
+                    <h3>Confirmamos talla y precio</h3>
+                    <p>Te asesoramos con la talla, revisamos disponibilidad y te confirmamos el precio final y los
+                        tiempos de
+                        envío.</p>
+                </article>
+                <article class="how-step">
+                    <span class="how-step-number">4</span>
+                    <h3>Cerramos el pedido</h3>
+                    <p>Realizas el pago con el método acordado y gestionamos el envío. Te avisamos cuando salga tu
+                        pedido.</p>
+                </article>
+            </div>
+
+            <div class="how-to-cta">
+                <a href="https://whatsapp.com/channel/0029Vb6qOE62f3EOLORTpE0q" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Hablar ahora por WhatsApp</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQS -->
+        <section class="section faq">
+            <h2 class="section-title">Dudas rápidas</h2>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>⏱ ¿Cuánto tarda en llegar mi pedido?</h3>
+                    <p>El plazo estimado es de unas 2 semanas desde el envío, dependiendo del volumen y del transporte.
+                    </p>
+                </article>
+                <article class="faq-item">
+                    <h3>📦 ¿Hacéis devoluciones?</h3>
+                    <p>No gestionamos devoluciones, pero sí cambios por talla. Es posible que haya costes extra de envío
+                        en los
+                        cambios.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>📏 ¿Cómo acierto con la talla?</h3>
+                    <p>Consulta la guía de tallas y, si tienes dudas, mándanos tus medidas y te recomendamos la talla
+                        ideal.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>✅ ¿Son productos oficiales?</h3>
+                    <p>Los productos proceden de proveedores externos. No somos tienda oficial de ningún club, liga o
+                        marca
+                        registrada.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/ercatalogo" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://t.me/ercatalogo" target="_blank">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb6qOE62f3EOLORTpE0q" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p>© 2025 ErCatálogo · Catálogo de camisetas y ropa deportiva. No somos tienda oficial de ningún club o marca.
+        </p>
+    </footer>
+
+    <!-- Script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
