@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ErCatálogo</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts + Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>ErCatálogo</h1>
+                <span>La mejor calidad de camisetas</span>
+            </div>
+            <div class="tagline">
+                <i class="fas fa-shirt"></i> Colección 2025/26 · Mundial 2026
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Sección filtros ligas -->
+            <div class="filters-section">
+                <div class="filter-title">
+                    <i class="fas fa-futbol"></i> FILTRAR POR LIGA / COMPETICIÓN
+                </div>
+                <div class="categories-wrapper" id="filterButtonsContainer"></div>
+            </div>
+
+            <!-- SECCIONES POR CATEGORÍA (Fútbol, Otros Deportes) -->
+            <div id="sectionsContainer"></div>
+
+            <!-- SECCIÓN FAQS -->
+            <section class="section faq">
+                <h2 class="section-title">Dudas rápidas</h2>
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <h3>⏱ ¿Cuánto tarda en llegar mi pedido?</h3>
+                        <p>El plazo estimado es de unas 2 semanas desde el envío, dependiendo del volumen y del
+                            transporte.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>📦 ¿Hacéis devoluciones?</h3>
+                        <p>No gestionamos devoluciones, pero sí cambios por talla. Es posible que haya costes extra de
+                            envío en los cambios.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>📏 ¿Cómo acierto con la talla?</h3>
+                        <p>Consulta la guía de tallas y, si tienes dudas, mándanos tus medidas y te recomendamos la
+                            talla ideal.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>✅ ¿Son productos oficiales?</h3>
+                        <p>Los productos proceden de proveedores externos. No somos tienda oficial de ningún club, liga
+                            o marca registrada.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN CÓMO COMPRAR -->
+            <section id="como-comprar" class="section how-to">
+                <h2 class="section-title">Cómo comprar en ErCatálogo</h2>
+                <div class="how-to-steps">
+                    <article class="how-step">
+                        <span class="how-step-number">1</span>
+                        <h3>Elige tu modelo</h3>
+                        <p>Entra en la categoría que quieras (fútbol, NBA, conjuntos...) y localiza la camiseta o
+                            conjunto que te guste.</p>
+                    </article>
+                    <article class="how-step">
+                        <span class="how-step-number">2</span>
+                        <h3>Envíanos captura o enlace</h3>
+                        <p>Haz captura de pantalla o copia el enlace del producto en Yupoo y mándalo por WhatsApp,
+                            Telegram o Instagram.</p>
+                    </article>
+                    <article class="how-step">
+                        <span class="how-step-number">3</span>
+                        <h3>Confirmamos talla y precio</h3>
+                        <p>Te asesoramos con la talla, revisamos disponibilidad y te confirmamos el precio final y los
+                            tiempos de envío.</p>
+                    </article>
+                    <article class="how-step">
+                        <span class="how-step-number">4</span>
+                        <h3>Cerramos el pedido</h3>
+                        <p>Realizas el pago con el método acordado y gestionamos el envío. Te avisamos cuando salga tu
+                            pedido.</p>
+                    </article>
+                </div>
+                <div class="how-to-cta">
+                    <a href="https://whatsapp.com/channel/0029Vb6qOE62f3EOLORTpE0q" target="_blank"
+                        class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Hablar ahora por WhatsApp</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SECCIÓN POR QUÉ ERCATÁLOGO -->
+            <section id="beneficios" class="section benefits">
+                <h2 class="section-title">¿Por qué ErCatálogo?</h2>
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Calidad seleccionada</h3>
+                        <p>Trabajamos con proveedores de confianza y revisamos cada catálogo para ofrecer prendas con
+                            buen acabado, tejido y detalles.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <h3>Precios ajustados</h3>
+                        <p>Acceso a camisetas y conjuntos estilo pro a precios muy por debajo de la tienda oficial.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3>Envíos a España</h3>
+                        <p>Recibe tu pedido aproximadamente en dos semanas desde el envío, con opción de envío gratis a
+                            partir de cierto volumen.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3>Atención directa</h3>
+                        <p>Resolvemos dudas de talla, modelos, precios y combinaciones por WhatsApp, Telegram e
+                            Instagram.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/ercatalogo" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://t.me/ercatalogo" target="_blank">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb6qOE62f3EOLORTpE0q" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p>© 2026 ErCatálogo · Catálogo de camisetas y ropa deportiva. No somos tienda oficial de ningún club o marca.
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
