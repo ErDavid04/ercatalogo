@@ -1,31 +1,138 @@
 // Datos de categorías con imágenes locales (shorts ahora está en grupo "futbol" y se han añadido Saudi League y Euro 2024)
 const categoriesData = [
-    // ----- FUTBOL (incluye shorts y las nuevas ligas) -----
-    { id: "worldcup", name: "World Cup 2026", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/5186861", icon: "fas fa-globe-americas", img: "img/worldcup.png" },
-    { id: "laliga", name: "La Liga", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905281", icon: "fas fa-flag-checkered", img: "img/laliga.png" },
-    { id: "premier", name: "Premier League", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905279", icon: "fas fa-crown", img: "img/premier.png" },
-    { id: "bundesliga", name: "Bundesliga", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905294", icon: "fas fa-futbol", img: "img/bundesliga.png" },
-    { id: "ligue1", name: "Ligue 1", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905282", icon: "fas fa-wine-bottle", img: "img/ligue1.png" },
-    { id: "seriea", name: "Serie A", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905290", icon: "fas fa-italy-flag", img: "img/seriea.png" },
-    { id: "portugal", name: "Liga Portugal", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905351", icon: "fas fa-champagne-glasses", img: "img/portugal.png" },
-    { id: "mls", name: "MLS", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905300", icon: "fas fa-baseball-ball", img: "img/mls.png" },
-    { id: "kingsleague", name: "Kings League", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4906905", icon: "fas fa-chess-king", img: "img/kingsleague.png" },
-    // NUEVAS LIGAS AÑADIDAS AQUÍ
-    { id: "saudi", name: "Saudi Professional League", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905949", icon: "fas fa-crown", img: "img/saudi.png" },
-    { id: "euro2024", name: "UEFA Euro 2024", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905956", icon: "fas fa-trophy", img: "img/euro2024.png" },
-    { id: "shorts", name: "Shorts", group: "futbol", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905340", icon: "fas fa-tshirt", img: "img/shorts.png" },
+    // ----- FÚTBOL -----
+    {
+        id: "worldcup",
+        name: "World Cup 2026",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/5070592",
+        icon: "fas fa-globe-americas",
+        img: "img/worldcup.png"
+    },
+    {
+        id: "laliga",
+        name: "La Liga",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/3923254",
+        icon: "fas fa-flag-checkered",
+        img: "img/laliga.png"
+    },
+    {
+        id: "premier",
+        name: "Premier League",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/2777511",
+        icon: "fas fa-crown",
+        img: "img/premier.png"
+    },
+    {
+        id: "bundesliga",
+        name: "Bundesliga",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/3293731",
+        icon: "fas fa-futbol",
+        img: "img/bundesliga.png"
+    },
+    {
+        id: "ligue1",
+        name: "Ligue 1",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/3297315",
+        icon: "fas fa-wine-bottle",
+        img: "img/ligue1.png"
+    },
+    {
+        id: "seriea",
+        name: "Serie A",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/2777483",
+        icon: "fas fa-italy-flag",
+        img: "img/seriea.png"
+    },
+    {
+        id: "portugal",
+        name: "Liga Portugal",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/3289463",
+        icon: "fas fa-champagne-glasses",
+        img: "img/portugal.png"
+    },
+    {
+        id: "mls",
+        name: "MLS",
+        group: "futbol",
+        url: "https://1022669895.x.yupoo.com/categories/4089028",
+        icon: "fas fa-baseball-ball",
+        img: "img/mls.png"
+    },
+    {
+        id: "shorts",
+        name: "Shorts",
+        group: "futbol",
+        url: "https://879322886k.x.yupoo.com/albums?tab=gallery",
+        icon: "fas fa-tshirt",
+        img: "img/shorts.png"
+    },
+    {
+        id: "chaquetas",
+        name: "Chaquetas",
+        group: "futbol",
+        url: "https://xionghaishuangmian.x.yupoo.com/albums?tab=gallery",
+        icon: "fas fa-shirt",
+        img: "img/chaquetas.png"
+    },
+
     // ----- OTROS DEPORTES -----
-    { id: "nba", name: "NBA", group: "otrosDeportes", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905338", icon: "fas fa-basketball-ball", img: "img/nba.png" },
-    { id: "f1", name: "F1", group: "otrosDeportes", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4905695", icon: "fas fa-car", img: "img/f1.png" },
-    { id: "nfl", name: "NFL", group: "otrosDeportes", url: "https://zxcvbnm123-jersey.x.yupoo.com/categories/4906877", icon: "fas fa-football-ball", img: "img/nfl.png" }
+    {
+        id: "nba",
+        name: "NBA",
+        group: "otrosDeportes",
+        url: "https://pifajersey.x.yupoo.com/albums?tab=gallery",
+        icon: "fas fa-basketball-ball",
+        img: "img/nba.png"
+    },
+    {
+        id: "f1",
+        name: "F1",
+        group: "otrosDeportes",
+        url: "https://www.yupoo.store/categories/44?isSubCate=true",
+        icon: "fas fa-car",
+        img: "img/f1.png"
+    },
+    {
+        id: "nfl",
+        name: "NFL",
+        group: "otrosDeportes",
+        url: "https://www.yupoo.store/categories/726?isSubCate=true",
+        icon: "fas fa-football-ball",
+        img: "img/nfl.png"
+    },
+    {
+        id: "mlb",
+        name: "MLB",
+        group: "otrosDeportes",
+        url: "https://eryiqiuyi111.x.yupoo.com/albums?tab=gallery",
+        icon: "fas fa-baseball-ball",
+        img: "img/mlb.png"
+    }
 ];
 
 // Orden de filtros (botones) - Incluyo las nuevas ligas en el orden deseado
 const filterOrder = [
-    "worldcup", "laliga", "premier", "bundesliga", "ligue1", "seriea", "portugal", "mls", "kingsleague",
-    "saudi", "euro2024", // <-- Nuevas ligas añadidas aquí
+    "worldcup",
+    "laliga",
+    "premier",
+    "bundesliga",
+    "ligue1",
+    "seriea",
+    "portugal",
+    "mls",
     "shorts",
-    "nba", "f1", "nfl"
+    "chaquetas",
+    "nba",
+    "f1",
+    "nfl",
+    "mlb"
 ];
 
 let orderedCategories = [];
@@ -92,7 +199,7 @@ function renderSectionsByFilter() {
 
     const groupTitles = {
         futbol: { title: "⚽ Fútbol · Camisetas oficiales", styleClass: "section-futbol", colorAccent: "#1e5a7d" },
-        otrosDeportes: { title: "🏀 Otros Deportes · NBA · F1 · NFL", styleClass: "section-otrosDeportes", colorAccent: "#d97706" }
+        otrosDeportes: { title: "🏀 Otros Deportes · NBA · F1 · NFL · MLB", styleClass: "section-otrosDeportes", colorAccent: "#d97706" }
     };
 
     let html = '';
