@@ -1,4 +1,4 @@
-// Datos de categorías con imágenes locales (shorts ahora está en grupo "futbol" y se han añadido Saudi League y Euro 2024)
+// Datos de categorías con imágenes locales
 const categoriesData = [
     // ----- FÚTBOL -----
     {
@@ -81,6 +81,22 @@ const categoriesData = [
         icon: "fas fa-shirt",
         img: "img/chaquetas.png"
     },
+    {
+        id: "conjuntos_manga_larga",
+        name: "Conjuntos de manga larga",
+        group: "futbol",
+        url: "https://aosendi.x.yupoo.com/collections/789575",
+        icon: "fas fa-shirt",
+        img: "img/conjuntos-manga-larga.png"
+    },
+    {
+        id: "conjuntos_manga_corta",
+        name: "Conjuntos de manga corta",
+        group: "futbol",
+        url: "https://aosendi.x.yupoo.com/collections/3926493",
+        icon: "fas fa-shirt",
+        img: "img/conjuntos-manga-corta.png"
+    },
 
     // ----- OTROS DEPORTES -----
     {
@@ -117,7 +133,7 @@ const categoriesData = [
     }
 ];
 
-// Orden de filtros (botones) - Incluyo las nuevas ligas en el orden deseado
+// Orden de filtros (botones)
 const filterOrder = [
     "worldcup",
     "laliga",
@@ -129,6 +145,8 @@ const filterOrder = [
     "mls",
     "shorts",
     "chaquetas",
+    "conjuntos_manga_larga",
+    "conjuntos_manga_corta",
     "nba",
     "f1",
     "nfl",
@@ -136,12 +154,16 @@ const filterOrder = [
 ];
 
 let orderedCategories = [];
+
 for (let key of filterOrder) {
     const found = categoriesData.find(c => c.id === key);
     if (found) orderedCategories.push(found);
 }
+
 categoriesData.forEach(cat => {
-    if (!filterOrder.includes(cat.id)) orderedCategories.push(cat);
+    if (!filterOrder.includes(cat.id)) {
+        orderedCategories.push(cat);
+    }
 });
 
 let activeFilter = "all";
@@ -149,20 +171,31 @@ let activeFilter = "all";
 // Render botones de filtro
 function renderFilterButtons() {
     const container = document.getElementById("filterButtonsContainer");
+
     if (!container) return;
-    let buttonsHtml = `<button class="filter-btn ${activeFilter === 'all' ? 'active' : ''}" data-filter="all"><i class="fas fa-layer-group"></i> Todas</button>`;
+
+    let buttonsHtml = `
+        <button class="filter-btn ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">
+            <i class="fas fa-layer-group"></i> Todas
+        </button>
+    `;
+
     orderedCategories.forEach(cat => {
         const isActive = activeFilter === cat.id;
+
         buttonsHtml += `
             <button class="filter-btn ${isActive ? 'active' : ''}" data-filter="${cat.id}">
                 <i class="${cat.icon}"></i> ${cat.name}
             </button>
         `;
     });
+
     container.innerHTML = buttonsHtml;
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const filterValue = btn.getAttribute('data-filter');
+
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            const filterValue = btn.getAttribute("data-filter");
+
             if (filterValue) {
                 activeFilter = filterValue;
                 renderFilterButtons();
@@ -173,18 +206,30 @@ function renderFilterButtons() {
 }
 
 function getFilteredItems() {
-    if (activeFilter === "all") return orderedCategories;
+    if (activeFilter === "all") {
+        return orderedCategories;
+    }
+
     const found = orderedCategories.find(cat => cat.id === activeFilter);
+
     return found ? [found] : [];
 }
 
 // Renderizar secciones (solo Fútbol y Otros Deportes)
 function renderSectionsByFilter() {
     const sectionsContainer = document.getElementById("sectionsContainer");
+
     if (!sectionsContainer) return;
+
     const filteredItems = getFilteredItems();
+
     if (filteredItems.length === 0) {
-        sectionsContainer.innerHTML = `<div class="empty-message"><i class="fas fa-search-minus"></i> No hay categorías con este filtro.</div>`;
+        sectionsContainer.innerHTML = `
+            <div class="empty-message">
+                <i class="fas fa-search-minus"></i>
+                No hay categorías con este filtro.
+            </div>
+        `;
         return;
     }
 
@@ -192,31 +237,50 @@ function renderSectionsByFilter() {
         futbol: [],
         otrosDeportes: []
     };
+
     filteredItems.forEach(item => {
-        if (item.group === "futbol") groups.futbol.push(item);
-        else if (item.group === "otrosDeportes") groups.otrosDeportes.push(item);
+        if (item.group === "futbol") {
+            groups.futbol.push(item);
+        } else if (item.group === "otrosDeportes") {
+            groups.otrosDeportes.push(item);
+        }
     });
 
     const groupTitles = {
-        futbol: { title: "⚽ Fútbol · Camisetas oficiales", styleClass: "section-futbol", colorAccent: "#1e5a7d" },
-        otrosDeportes: { title: "🏀 Otros Deportes · NBA · F1 · NFL · MLB", styleClass: "section-otrosDeportes", colorAccent: "#d97706" }
+        futbol: {
+            title: "⚽ Fútbol · Camisetas oficiales",
+            styleClass: "section-futbol",
+            colorAccent: "#1e5a7d"
+        },
+        otrosDeportes: {
+            title: "🏀 Otros Deportes · NBA · F1 · NFL · MLB",
+            styleClass: "section-otrosDeportes",
+            colorAccent: "#d97706"
+        }
     };
 
-    let html = '';
+    let html = "";
+
     for (let [groupKey, items] of Object.entries(groups)) {
         if (items.length === 0) continue;
+
         const info = groupTitles[groupKey];
+
         html += `
             <div class="category-section ${info.styleClass}" data-group="${groupKey}">
-                <div class="section-header" style="border-bottom-color: ${info.colorAccent};">${info.title}</div>
+                <div class="section-header" style="border-bottom-color: ${info.colorAccent};">
+                    ${info.title}
+                </div>
                 <div class="catalog-grid" id="grid-${groupKey}"></div>
             </div>
         `;
     }
+
     sectionsContainer.innerHTML = html;
 
     for (let [groupKey, items] of Object.entries(groups)) {
         const gridContainer = document.getElementById(`grid-${groupKey}`);
+
         if (gridContainer && items.length) {
             gridContainer.innerHTML = renderCardsHTML(items);
             attachCardEvents(gridContainer);
@@ -226,33 +290,51 @@ function renderSectionsByFilter() {
 
 function renderCardsHTML(items) {
     return items.map(cat => {
-        let groupLabel = cat.group === 'futbol' ? '⚽ Fútbol' : '🏆 Deportes';
+        const groupLabel = cat.group === "futbol"
+            ? "⚽ Fútbol"
+            : "🏆 Deportes";
+
         return `
             <div class="card" data-url="${cat.url}" data-name="${cat.name}">
                 <div class="card-img-wrapper">
-                    <img src="${cat.img}" alt="${cat.name}" onerror="this.src='https://placehold.co/400x300/e2e8f0/94a3b8?text=Camiseta'">
+                    <img
+                        src="${cat.img}"
+                        alt="${cat.name}"
+                        onerror="this.src='https://placehold.co/400x300/e2e8f0/94a3b8?text=Camiseta'"
+                    >
                 </div>
+
                 <div class="card-info">
                     <div class="card-category">
                         <i class="${cat.icon}"></i> ${groupLabel}
                     </div>
-                    <div class="card-title">${cat.name}</div>
+
+                    <div class="card-title">
+                        ${cat.name}
+                    </div>
+
                     <div class="card-desc">
                         <span>Ver colección completa</span>
-                        <span class="badge-link"><i class="fas fa-external-link-alt"></i> Yupoo</span>
+                        <span class="badge-link">
+                            <i class="fas fa-external-link-alt"></i> Yupoo
+                        </span>
                     </div>
                 </div>
             </div>
         `;
-    }).join('');
+    }).join("");
 }
 
 function attachCardEvents(container) {
-    const cards = container.querySelectorAll('.card');
+    const cards = container.querySelectorAll(".card");
+
     cards.forEach(card => {
-        card.addEventListener('click', (e) => {
-            const url = card.getAttribute('data-url');
-            if (url) window.open(url, '_blank', 'noopener,noreferrer');
+        card.addEventListener("click", (e) => {
+            const url = card.getAttribute("data-url");
+
+            if (url) {
+                window.open(url, "_blank", "noopener,noreferrer");
+            }
         });
     });
 }
