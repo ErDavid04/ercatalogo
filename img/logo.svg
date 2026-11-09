@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ErCatálogo">
+  <rect width="64" height="64" rx="15" fill="#0e1116"/>
+  <g transform="translate(32 33) scale(1.12) translate(-32 -32)">
+    <path d="M23 11h5.5c1.2 3.6 3.2 5.4 3.5 5.4s2.3-1.8 3.5-5.4H41l13 8.2-5.2 9.6-4.8-2.6V53H20V26.2l-4.8 2.6L10 19.2z" fill="#c8f169"/>
+    <path d="M12.6 17.6l5.2 9.7M51.4 17.6l-5.2 9.7" stroke="#0e1116" stroke-width="1.6"/>
+  </g>
+</svg>
